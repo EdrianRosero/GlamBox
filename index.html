@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <title>GlamBox</title>
+        <link rel="icon" type="x-icon" href="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/GlamBox-Brand.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+            body {
+                margin: 0;
+                font-family:Poppins;
+            }
+
+            #nav-bar .nav-barContainer{
+                width: 100vw;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                position: fixed;
+                z-index: 1;
+                
+            }
+            
+            .nav-barContainer{
+                padding: 5px 2px ;
+                background-color: rgba(251, 190, 190, 0.7);
+            }
+
+            .glamBox-Brand{
+                margin: 0px 20px;
+            }
+            #homeBG img{
+                width: 100%;
+                display: block;
+            }
+
+            .aboutBG img{
+                width: 100%;
+                display: block;
+            }
+
+            .aboutContainer{
+                position: relative;
+            }
+            
+            .aboutSection{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: calc(50% - 25px);
+            }
+
+            .aboutSection h1{
+                font-size: 60px;
+                text-align: center;
+            }
+
+            .aboutSection p{
+                font-size: 20px;
+                text-align: center;
+
+            }
+
+            .aboutLayer{
+                position: absolute;
+                background-color: rgba(235, 207, 207, 0.7);
+                width: 70%;
+                height: 80%;
+                border-radius: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .aboutUnderline{
+                width: 135px;
+                height: 5px;
+                background-color: black;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .fashionMainContainer{
+                position: relative;
+            }
+            .fashionSubContainer{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            } 
+
+            .summer, .winter{
+                background-color: rgba(235, 207, 207, 0.7);
+                border-radius: 25px;
+                border: 1px solid #837272;
+                box-shadow: 2px 4px 5px #bbbbbb;
+                width: 450px;
+                height: 450px;
+                text-align: center;
+                margin: 20px 50px;
+            }
+
+            .fashionTitle {
+                font-size: 60px;
+                text-align: center;
+                margin-bottom: 0; 
+                position: relative;
+            }
+
+            .fashionUnderline{
+                width: 135px;
+                height: 5px;
+                background-color: black;
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #categoriesImage{
+                margin: 23px 0px;
+                width: 395px; 
+                height: 350px;
+            }
+
+            
+            #categoryButton{
+                background-color: #d79e9e;
+                margin-left: 160px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                width: 100px;
+                cursor: pointer;
+            }
+
+            #categoryButton:hover{
+                background-color: #ea2525;
+                color: #fff;
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                background-color: #d79e9e;
+                margin-top: 50px;
+            }
+
+            .socialsContainer img{
+                width: 50px;
+                height: auto;
+                margin: 20px 10px 
+            }
+
+            .brand img{
+                width: 150px;
+                height: auto;
+            }
+
+            .navList a{
+                text-decoration: none;
+                color: #000;
+            }
+
+            .navList ul{
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .navList li{
+                text-decoration: none;
+                display: flex;
+                margin: 0 10px;
+            }
+
+            .navList{
+                margin: 0 30px ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav id="nav-bar">
+            <div class="nav-barContainer">
+                <div class="glamBox-Brand">
+                    <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/GlamBox-Brand.png" alt="GlamBox-Brand" width="100px" height="auto">
+                </div>
+                <div class="navList">
+                    <ul>
+                        <li> <a href="#homeBG"> Home </a> </li>
+                        <li> <a href="#about"> About </a> </li>
+                        <li> <a href="#fashionCategories"> Categories </a> </li>
+                        <li> <a href="#contactCategories"> Contacts </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END OF NAVBAR -->
+       
+        <!-- HOME SECTION BG -->
+        <section id="homeBG">
+            <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/HomeSection-BG.png" alt="HomeBGImage">
+        </section>
+        <!-- END OF HOME SECTION BG -->
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="aboutContainer">
+                <div class="aboutLayer"></div>
+                <div class="aboutSection">
+                    <h1 class="aboutTitle">ABOUT</h1>
+                    <div class="aboutUnderline"></div>
+                    <p>Welcome to GlamBox, your go-to destination for curated fashion wear recommendations! At GlamBox, we believe that fashion is an art form, and every individual deserves to express their unique style with confidence. Our team of fashion enthusiasts is dedicated to providing you with handpicked selections of the latest trends, timeless classics, and must-have wardrobe essentials. Whether you're seeking everyday elegance or bold statements, GlamBox is your personal guide to navigating the world of fashion with flair. Join us on this glamorous journey, where style meets substance, and discover a wardrobe that reflects the radiant beauty within you.</p>
+                </div>
+                <div class="aboutBG">
+                    <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/AboutSection-BG.png" alt="AboutBGImage">
+                </div>
+            </div>
+        </section>
+        <!-- END OF ABOUT SECTION -->
+
+        <!-- FASHION SECTION -->
+        <section id="fashionCategories">
+            <div class="fashionMainContainer">
+                <h1 class="fashionTitle">CATEGORIES</h1>
+                <div class="fashionUnderline"></div>
+                <div class="fashionSubContainer">
+                    <div class="summer">
+                        <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/Summer-BG.png" alt="SummerBGImage" width="395px" height="350px" id="categoriesImage">
+                        <div id="categoryButton">Check Now</div>
+                    </div>
+                    <div class="winter">
+                        <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/Winter-BG.png" alt="WinterBGImage" width="395px" height="350px" id="categoriesImage">
+                        <div id="categoryButton">Check Now</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF FASHION SECTION -->
+
+        <!-- CONTACT SECTION -->
+        <footer id="contactCategories">
+            <div class="footerContainer">
+                <h1 class="contactTitle">Get in touch with me!</h1>
+                <div class="socialsContainer">
+                    <a href="https://www.facebook.com/edrianjoshua.rosero.73/" target="_blank"> <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/Facebook-Icon.png" alt="FacebookIcon"> </a>
+                    <a href="https://github.com/EdrianRosero" target="_blank"> <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/Github-Icon.png" alt="GithubIcon"></a>
+                    <a href="https://www.linkedin.com/in/edrian-joshua-rosero-62884824a/" target="_blank"> <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/LinkedIn-Icon.png" alt="LinkedInIcon"></a>
+                </div>
+                <div class="brand">
+                    <img src="https://raw.githubusercontent.com/EdrianRosero/GlamBox/main/GlamBox-Brand.png" alt="GlamBoxBrandImage">
+                </div>
+            </div>
+        </footer>
+        <!-- END OF CONTACT SECTION -->
+    </body>
+</html>
